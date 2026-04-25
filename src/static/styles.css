@@ -16,12 +16,82 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+}
+
+.user-menu {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.user-icon-btn {
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-dropdown {
+  margin-top: 8px;
+  background: white;
+  color: #333;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  min-width: 180px;
+  text-align: left;
+}
+
+.user-dropdown button {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.auth-status {
+  font-size: 14px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  width: 90%;
+  max-width: 420px;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.secondary-btn {
+  background-color: #616161;
+}
+
+.secondary-btn:hover {
+  background-color: #757575;
 }
 
 header h1 {
